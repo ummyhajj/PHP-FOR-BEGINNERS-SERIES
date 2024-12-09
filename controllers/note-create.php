@@ -1,23 +1,27 @@
 <?php
 
+require 'Validator.php';
 
-$config = require('config.php');
+
+$config = require 'config.php';
 $db = new Database($config['database']);
 
 $heading = 'Create a note'; 
 
+
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors  = [];
+
+
+
+    $validator = new Validator();
  
     
-    if(strlen($_POST['body']) === 0){
-        $errors['body'] = 'Note body is required';
-    }
+    if(! Validator::string($_POST['body'], 1,1000)){
+        $errors['body'] = 'A body of no more than 1,000 characters is required';
 
-    if(strlen($_POST['body']) > 1000){
-        $errors['body'] = 'Note body must be less than 1000 characters';
-
-    }
+    } 
+    
     if(empty($errors)){
         $db->query('INSERT INTO notes (body,user_id) VALUES (:body,:user_id)',[
   
@@ -25,7 +29,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         'user_id' => 1
     ]);
     }
-   
+        
+    if (! Validator ::email('ummyhajj222@gmail.com')){
+    dd('That is not a valid email address'); 
+    }
 }
 
 

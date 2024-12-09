@@ -9,7 +9,7 @@
        <h1 class="text-2xl font-bold">Sorry, page not found</h1>
 
        <p class="mt-4">
-        <a href="/validation/index" class="text-blue-500 hover:underline">Go back home.</a>
+        <a href="/extract-validator/index" class="text-blue-500 hover:underline">Go back home.</a>
       </p>
     </div>
   </main>
