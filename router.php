@@ -1,6 +1,6 @@
 <?php
 
-$routes = require "routes.php";
+// $routes = require "routes.php";
 
 
 
@@ -20,7 +20,6 @@ $routes = require "routes.php";
   //   }
   
 
-  //declaration of the routes
 
  
   
@@ -31,7 +30,7 @@ $routes = require "routes.php";
       if (array_key_exists($uri, $routes)) {
           require $routes[$uri];
       } else {
-          abort(404); 
+          abort(); 
       }
   }
   function abort($code = 404){
@@ -41,7 +40,7 @@ $routes = require "routes.php";
   
       die();
   }
-  
+  $routes = require "routes.php";
   $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
   routeToController($uri,$routes);
   

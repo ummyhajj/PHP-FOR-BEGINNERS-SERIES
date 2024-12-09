@@ -9,7 +9,7 @@
        <h1 class="text-2xl font-bold">Sorry, you are not authorized to view this page</h1>
 
        <p class="mt-4">
-        <a href="/naming-convention/index" class="text-blue-500 hover:underline">Go back home.</a>
+        <a href="/index" class="text-blue-500 hover:underline">Go back home.</a>
       </p>
     </div>
   </main>

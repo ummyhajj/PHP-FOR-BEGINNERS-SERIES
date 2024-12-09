@@ -1,6 +1,6 @@
 <?php
 
-require "config.php";
+// require "config.php";
 
 class Database{
     
@@ -11,7 +11,7 @@ class Database{
     public function __construct($config,$username = 'root', $password = '')
      {
 
-      $dsn ='mysql:'.http_build_query($config,'',';');
+      $dsn ='mysql:'. http_build_query($config,'',';');
 
 //this symbol  :: is a scope resolution operator
       $this->connection = new PDO($dsn, $username, $password, [
@@ -28,10 +28,16 @@ class Database{
       return $this;
   
     }
-    public function find(){
+    public function get()
+    {
+      return $this-> statement-> fetchAll();
+    }
+    public function find()
+    {
       return $this->statement->fetch();
     }
-    public function findOrFail(){
+    public function findOrFail()
+    {
       $result = $this->find();
 
       if(! $result){
@@ -41,9 +47,7 @@ class Database{
       return $result;
     }
 
-    public function get(){
-      return $this-> statement-> fetchAll();
-    }
+   
  
   }
       

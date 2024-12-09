@@ -1,20 +1,21 @@
 <?php
 
-require 'Validator.php';
+// require 'Validator.php';
 
 
-$config = require 'config.php';
+$config = require base_path('config.php');
 $db = new Database($config['database']);
 
-$heading = 'Create a note'; 
+// $heading = 'Create a note'; 
 
+$errors  = [];
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $errors  = [];
+   
 
 
 
-    $validator = new Validator();
+    // $validator = new Validator();
  
     
     if(! Validator::string($_POST['body'], 1,1000)){
@@ -28,16 +29,21 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         'body' => $_POST['body'],
         'user_id' => 1
     ]);
+
     }
+}  
         
-    if (! Validator ::email('ummyhajj222@gmail.com')){
-    dd('That is not a valid email address'); 
-    }
-}
+    // if (! Validator ::email('ummyhajj222@gmail.com')){
+    // dd('That is not a valid email address'); 
+    // }
 
 
 
 
-require 'views/notes/create.view.php';
+
+view ("notes/create.view.php", [
+    'heading' => 'Create a note',
+    'errors' => $errors
+]);
 
 
