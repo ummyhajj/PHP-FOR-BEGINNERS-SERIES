@@ -3,15 +3,23 @@
 
    require "functions.php";
    require "Database.php";
+  //  require "router.php";
 
   $config = require "config.php";
 
-//Whenever you have a PHP file that only contains a class, conventionally,you make the d uppercase D. The symbol :: is a scope resolution operator
+
   $db = new Database($config['database'] );
-  $posts = $db -> query('SELECT * FROM blog_posts')-> fetchAll(); 
 
+  $id = $_GET['id'];
+  //when accepting user inputs through a query string or through a form,never inline them with SQL query.To prevent sql injection
+  $query = "SELECT * FROM blog_posts WHERE id = ?";
 
+  // dd($query);
+  
+  $posts = $db-> query($query,[$id])-> fetch(); 
 
+  
 dd($posts);
+
 
 

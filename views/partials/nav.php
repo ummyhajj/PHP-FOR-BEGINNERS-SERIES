@@ -8,9 +8,9 @@
           </div>
           <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
-                <a href="/environments/index" class="<?= $uri === '/environments/index' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Home</a>
-                <a href="/environments/about" class="<?= $uri === '/environments/about' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">About</a>
-                <a href="/environments/contact" class="<?= $uri === '/environments/contact' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Contact</a>
+                <a href="/sql-injection/index" class="<?= $uri === '/sql-injection/index' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Home</a>
+                <a href="/sql-injection/about" class="<?= $uri === '/sql-injection/about' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">About</a>
+                <a href="/sql-injection/contact" class="<?= $uri === '/sql-injection/contact' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Contact</a>
               </div>                     
           </div>
         </div>
