@@ -1,6 +1,9 @@
 <?php
 
-$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
+$routes = require "routes.php";
+
+
+
   
   // Refactored the if statements below to the $route array
   //   if ( $uri === '/routers/index' ) {
@@ -15,16 +18,11 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
   
   //     require "controllers/contact.php";
   //   }
+  
+
   //declaration of the routes
 
-  $routes = [
-      '/rewriting/index' => 'controllers/index.php',
-      '/rewriting/about' => 'controllers/about.php',
-      '/rewriting/notes' => 'controllers/notes.php',
-      '/rewriting/note' => 'controllers/note.php',
-      '/rewriting/contact' => 'controllers/contact.php',
-  ];
-  
+ 
   
   
   //routing the current uri to the corresponding controller
@@ -44,5 +42,6 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
       die();
   }
   
+  $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
   routeToController($uri,$routes);
   

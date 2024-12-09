@@ -9,7 +9,7 @@
        <h1 class="text-2xl font-bold">Sorry, page not found</h1>
 
        <p class="mt-4">
-        <a href="/rewriting/index" class="text-blue-500 hover:underline">Go back home.</a>
+        <a href="/forms/index" class="text-blue-500 hover:underline">Go back home.</a>
       </p>
     </div>
   </main>

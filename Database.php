@@ -13,7 +13,7 @@ class Database{
 
       $dsn ='mysql:'.http_build_query($config,'',';');
 
-
+//this symbol  :: is a scope resolution operator
       $this->connection = new PDO($dsn, $username, $password, [
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
       ]);
@@ -44,12 +44,6 @@ class Database{
     public function get(){
       return $this-> statement-> fetchAll();
     }
-
-      
-    
-
-
-
-   
+ 
   }
       

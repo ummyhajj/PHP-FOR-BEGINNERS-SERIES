@@ -8,10 +8,10 @@
           </div>
           <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
-                <a href="/rewriting/index" class="<?= urlIs('/rewriting/index') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Home</a>
-                <a href="/rewriting/about" class="<?= urlIs('/rewriting/about') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">About</a>
-                <a href="/rewriting/notes" class="<?= urlIs('/rewriting/notes') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Notes</a>
-                <a href="/rewriting/contact" class="<?= urlIs('/rewriting/contact') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Contact</a>
+                <a href="/forms/index" class="<?= urlIs('/forms/index') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Home</a>
+                <a href="/forms/about" class="<?= urlIs('/forms/about') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">About</a>
+                <a href="/forms/notes" class="<?= urlIs('/forms/notes') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Notes</a>
+                <a href="/forms/contact" class="<?= urlIs('/forms/contact') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Contact</a>
               </div>                     
           </div>
         </div>
