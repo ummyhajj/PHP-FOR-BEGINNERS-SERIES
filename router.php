@@ -15,17 +15,21 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
   
   //     require "controllers/contact.php";
   //   }
-  //declaration of the routes.Endpoints
+  //declaration of the routes
+
   $routes = [
-      '/sql-injection/index' => 'controllers/index.php',
-      '/sql-injection/about' => 'controllers/about.php',
-      '/sql-injection/contact' => 'controllers/contact.php',
+      '/render/index' => 'controllers/index.php',
+      '/render/about' => 'controllers/about.php',
+      '/render/notes' => 'controllers/notes.php',
+      '/render/note' => 'controllers/note.php',
+      '/render/contact' => 'controllers/contact.php',
   ];
   
   
   
   //routing the current uri to the corresponding controller
-  function routeToConroller($uri,$routes){
+  function routeToController($uri,$routes){
+
       if (array_key_exists($uri, $routes)) {
           require $routes[$uri];
       } else {
@@ -40,5 +44,5 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
       die();
   }
   
+  routeToController($uri,$routes);
   
-  routeToConroller($uri,$routes);

@@ -1,8 +1,7 @@
-
 <?php
 
 require "config.php";
-//Whenever you have a PHP file that only contains a class,conventionally,you make the first letter of the file name uppercase so in this instance D. The symbol :: is a scope resolution operator
+
 class Database{
     
     public $connection;

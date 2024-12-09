@@ -1,7 +1,5 @@
 <?php
-/* Function for dump and die.This is usually used for debugging. 
-The dump function is used to display the contents of a variable, and the die function after the dump has output the contents, 
-it stops the execution of the script preventing any further code from running*/
+// Function for dump and die
 function dd($value){
     echo "<pre>";
     var_dump($value);
