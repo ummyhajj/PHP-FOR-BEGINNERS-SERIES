@@ -9,4 +9,6 @@
        <p>Hello! Welcome to the home page</p>
     </div>
   </main>
+  
   <?php require('partials/footer.php'); ?>
+
