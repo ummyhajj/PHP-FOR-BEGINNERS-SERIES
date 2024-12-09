@@ -18,11 +18,11 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
   //declaration of the routes
 
   $routes = [
-      '/render/index' => 'controllers/index.php',
-      '/render/about' => 'controllers/about.php',
-      '/render/notes' => 'controllers/notes.php',
-      '/render/note' => 'controllers/note.php',
-      '/render/contact' => 'controllers/contact.php',
+      '/rewriting/index' => 'controllers/index.php',
+      '/rewriting/about' => 'controllers/about.php',
+      '/rewriting/notes' => 'controllers/notes.php',
+      '/rewriting/note' => 'controllers/note.php',
+      '/rewriting/contact' => 'controllers/contact.php',
   ];
   
   

@@ -1,4 +1,6 @@
 <?php
+
+require "Response.php";
 // Function for dump and die
 function dd($value){
     echo "<pre>";
@@ -10,4 +12,14 @@ function dd($value){
 function urlIs($value){
 
    return $_SERVER['REQUEST_URI'] === $value;
+}
+
+function authorize($condition,$status = Response::FORBIDDEN){
+
+    if(! $condition){
+
+        abort($status);
+
+    }
+
 }

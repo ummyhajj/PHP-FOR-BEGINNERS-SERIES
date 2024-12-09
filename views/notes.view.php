@@ -4,15 +4,14 @@
 
   
   <main>
-    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 ">
 
     <?php foreach ($notes as $note): ?>
       <li>
-
-        <a href="/render/note?id=<?= $note['id'] ?>" class="text-blue-500 hover:underline">
+        <a href="/rewriting/note?id=<?= $note['id'] ?>"  class="text-blue-500 hover:underline">
           <?= $note['body'] ?>
         </a>
-    
+  
       </li>
 
     <?php endforeach; ?>
