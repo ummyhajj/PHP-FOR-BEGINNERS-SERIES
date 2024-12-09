@@ -1,6 +1,4 @@
-<?php 
-$uri = basename($_SERVER['REQUEST_URI']);
-?>
+
 <nav class="bg-gray-800">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
@@ -10,9 +8,9 @@ $uri = basename($_SERVER['REQUEST_URI']);
           </div>
           <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
-                <a href="/extract/index" class="<?= $uri === '/extract/index' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Home</a>
-                <a href="/extract/about" class="<?= $uri === '/extract/about' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">About</a>
-                <a href="extract/contact" class="<?= $uri === 'extract/contact' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Contact</a>
+                <a href="/environments/index" class="<?= $uri === '/environments/index' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Home</a>
+                <a href="/environments/about" class="<?= $uri === '/environments/about' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">About</a>
+                <a href="/environments/contact" class="<?= $uri === '/environments/contact' ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Contact</a>
               </div>                     
           </div>
         </div>
