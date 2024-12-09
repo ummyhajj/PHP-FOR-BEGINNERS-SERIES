@@ -1,8 +1,9 @@
 <?php
+  namespace Core;
+  use PDO;
 
-// require "config.php";
-
-class Database{
+class Database
+{
     
     public $connection;
     public $statement;
