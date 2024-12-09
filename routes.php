@@ -1,11 +1,11 @@
 <?php
-
+//The naming of these routes are done following convention
 return [
-      '/extract-validator/index' => 'controllers/index.php',
-      '/extract-validator/about' => 'controllers/about.php',
-      '/extract-validator/notes' => 'controllers/notes.php',
-      '/extract-validator/notes/create' => 'controllers/note-create.php',
-      '/extract-validator/note' => 'controllers/note.php',
-      '/extract-validator/contact' => 'controllers/contact.php',
+      '/naming-convention/index' => 'controllers/index.php',
+      '/naming-convention/about' => 'controllers/about.php',
+      '/naming-convention/notes' => 'controllers/notes/index.php',
+      '/naming-convention/notes/create' => 'controllers/notes/create.php',
+      '/naming-convention/note' => 'controllers/notes/show.php',
+      '/naming-convention/contact' => 'controllers/contact.php',
   ];
   

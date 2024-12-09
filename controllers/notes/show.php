@@ -23,4 +23,4 @@ $note  = $db -> query('SELECT * FROM notes WHERE id = :id', [
    
 
  
-require "views/note.view.php";
+require "views/notes/show.view.php";
