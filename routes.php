@@ -1,11 +1,11 @@
 <?php
 
 return [
-      '/forms/index' => 'controllers/index.php',
-      '/forms/about' => 'controllers/about.php',
-      '/forms/notes' => 'controllers/notes.php',
-      '/forms/notes/create' => 'controllers/note-create.php',
-      '/forms/note' => 'controllers/note.php',
-      '/forms/contact' => 'controllers/contact.php',
+      '/validation/index' => 'controllers/index.php',
+      '/validation/about' => 'controllers/about.php',
+      '/validation/notes' => 'controllers/notes.php',
+      '/validation/notes/create' => 'controllers/note-create.php',
+      '/validation/note' => 'controllers/note.php',
+      '/validation/contact' => 'controllers/contact.php',
   ];
   

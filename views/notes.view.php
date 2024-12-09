@@ -11,7 +11,7 @@
     <ul>
       <?php foreach ($notes as $note): ?>
         <li>
-          <a href="/forms/note?id=<?= $note['id'] ?>"  class="text-blue-500 hover:underline">
+          <a href="/validation/note?id=<?= $note['id'] ?>"  class="text-blue-500 hover:underline">
             <?= htmlspecialchars($note['body'] )?>
           </a>
     
@@ -21,7 +21,7 @@
 
 
       <p class="mt-6">
-        <a href="/forms/notes/create" class="text-blue-500 hover:underline">Create Notes</a>
+        <a href="/validation/notes/create" class="text-blue-500 hover:underline">Create Notes</a>
       </p>
     </ul> 
     

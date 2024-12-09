@@ -8,10 +8,10 @@
           </div>
           <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
-                <a href="/forms/index" class="<?= urlIs('/forms/index') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Home</a>
-                <a href="/forms/about" class="<?= urlIs('/forms/about') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">About</a>
-                <a href="/forms/notes" class="<?= urlIs('/forms/notes') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Notes</a>
-                <a href="/forms/contact" class="<?= urlIs('/forms/contact') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Contact</a>
+                <a href="/validation/index" class="<?= urlIs('/validation/index') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Home</a>
+                <a href="/validation/about" class="<?= urlIs('/validation/about') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">About</a>
+                <a href="/validation/notes" class="<?= urlIs('/validation/notes') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Notes</a>
+                <a href="/validation/contact" class="<?= urlIs('/validation/contact') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white">Contact</a>
               </div>                     
           </div>
         </div>
