@@ -35,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 view ("notes/create.view.php", [
-    'heading' => 'Create a note',
+    'heading' => 'Create note',
     'errors' => $errors
 ]);
 
